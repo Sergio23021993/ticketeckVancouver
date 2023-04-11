@@ -1,51 +1,66 @@
+
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./inicio.css">
+    <link rel="stylesheet" href="./inicio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="menu.js" defer></script>
     <title>Tus Entradas - Compra tus entradas para eventos deportivos, musicales y culturales</title>
 </head>
 <body>
     <header>
-        <h1>Tus Entradas - Compra tus entradas para eventos deportivos, musicales y culturales</h1>
-        <nav>
-            <ul>
-                <li><a href="#deportes">Deportes</a></li>
-                <li><a href="#musica">Música</a></li>
-                <li><a href="../index.html">Registrate</a></li>
-                <li><a href="../ofertas/oferta.html">Ofertas</a></li>
-            </ul>
-        </nav>
+        <div class="wrapper">
+            <nav>
+               <input type="radio" name="tab" id="home" checked>
+               <input type="radio" name="tab" id="inbox">
+               <input type="radio" name="tab" id="contact">
+               <input type="radio" name="tab" id="heart">
+               <input type="radio" name="tab" id="about">
+               <label for="home" class="home"><a href="#">Deportes<i class="fas fa-home"></i></a></label>
+               <label for="inbox" class="inbox"><a href="#">Espectaculos<i class="far fa-comment"></i></a></label>
+               <label for="contact" class="contact"><a href="#">Ofertas<i class="far fa-envelope"></i></a></label>
+               <label for="heart" class="heart"><a href="#">Mi Cuenta<i class="far fa-heart"></i></a></label>
+               <label for="about" class="about"><a href="#">Registrate<i class="far fa-user"></i></a></label>
+               <div class="tab"></div>
+            </nav>
     </header>
+    <h1>Tus Entradas - Compra tus entradas para eventos deportivos, musicales y culturales</h1>
     <main>
-        <section id="deportes">
-            <h2>Eventos deportivos</h2>
-            <img src="img/deporte1.jpg" alt="Deportes">
-            <p>Compra tus entradas para los mejores eventos deportivos del momento:</p>
-            <ul>
-                <li><a href="https://www.boleteriavip.com.ar/category/description/1/Futbol%22%3EBoleteria vip</a></li>
-            </ul>
-        </section>
-        <section id="musica">
-            <h2>Eventos musicales</h2>
-            <img src="img/musica.png" alt="Conciertos">
-            <p>Compra tus entradas para los mejores eventos musicales del momento:</p>
-            <ul>
-                <li><a href="https://www.ticketek.com.ar/%22%3ETicketek</a></li>
-            </ul>
-        </section>
-        <section id="cultura">
-            <h2>Eventos culturales</h2>
-            <img src="img/teatro.jpeg" alt="Cultura">
-            <p>Compra tus entradas para los mejores eventos culturales del momento:</p>
-            <ul>
-                <li><a href="https://www.edenentradas.com.ar/sitio/contenido/teatros%22%3EEden entradas</a></li>
-            </ul>
-        </section>
+        <div class="galeria">
+            <img src="./deporte.jpg" alt="">
+            <img src="./musica.jpg" alt="">
+            <img src="./teatro.jpg" alt="">
+            <img src="./deporte.jpg" alt="">
+            <img src="./musica.jpg" alt="">
+            <img src="./teatro.jpg" alt="">
+          </div>
+      
     </main>
     <footer>
-        <p>© 2023 Tus Entradas - Todos los derechos reservados</p>
+        <div class="wrapper">
+            <div class="button">
+               <div class="icon">
+                  <i class="fab fa-facebook-f"></i>
+               </div>
+               <span>Facebook</span>
+            </div>
+            <div class="button">
+               <div class="icon">
+                  <i class="fab fa-twitter"></i>
+               </div>
+               <span>Twitter</span>
+            </div>
+            <div class="button">
+               <div class="icon">
+                  <i class="fab fa-instagram"></i>
+               </div>
+               <span>Instagram</span>
+            </div>
+            </div>
+         </div>
     </footer>
 </body>
 </html>
